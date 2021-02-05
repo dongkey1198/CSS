@@ -1,0 +1,16 @@
+.parent {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Poppins" sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: -0.1em;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 100px;
+}

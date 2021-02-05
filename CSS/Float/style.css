@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 400px;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+.parent::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  float: left;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+
+.other {
+  background-color: green;
+}

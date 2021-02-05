@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: pink;
+}
+
+.child {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  display: inline-block;
+}

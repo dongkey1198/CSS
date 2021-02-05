@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+button {
+  width: 161.15px;
+  height: 56px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 705px;
+  height: 265px;
+  border-radius: 100px;
+}
+
+.cancel-btn {
+  background-color: #ff4949;
+  margin-right: 16px;
+  box-shadow: 0 10px 16px 0 rgba(255, 73, 73, 0.35);
+}
+
+.cancel-btn:hover {
+  background-color: #d41818;
+}
+
+.cancel-btn:active {
+  background-color: #ff0000;
+}
+
+.confirm-btn {
+  background-color: #13ce66;
+  box-shadow: 0 10px 16px 0 rgba(19, 206, 102, 0.35);
+}
+
+.confirm-btn:hover {
+  background-color: #037c39;
+}
+
+.confirm-btn:active {
+  background-color: #00ff73;
+}

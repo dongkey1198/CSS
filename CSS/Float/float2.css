@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.pseudo::before {
+  content: "✨";
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.pseudo::after {
+  content: " Colour";
+  width: 10px;
+  height: 20px;
+  margin-top: 10px;
+  font-style: italic;
+  display: inline-block;
+  background-color: pink;
+}

@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+/* delete string in dt */
+.sr-only {
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* ==========================    card  ================================= */
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 840px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* =====================   card Image   ================ */
+.card-image {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: black;
+  background-image: url(./img-house-vertical.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  margin-right: 24px;
+}
+
+/* like-button(3): under card image */
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-image: url("./icon-favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+  background-size: 24px 24px;
+  cursor: pointer;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+/* =====================   card Image end ================ */
+
+/* =====================   card content   ================ */
+.card-content {
+  flex-grow: 1;
+}
+
+/* ========== card-header======== */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* ==== property-type===*/
+.property-type {
+}
+
+.plus-badge {
+  display: inline-block;
+  background-color: #92174d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: white;
+  padding: 1px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.property-type span {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #7d858f;
+}
+/* ==== property-type end===*/
+
+/* ==== property-rate===*/
+.property-rate {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.property-rate::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url(./icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 5.33px;
+}
+
+.property-rate strong {
+  color: #151b26;
+}
+
+.property-rate span {
+  font-weight: 400;
+  color: #7d858f;
+}
+/* ==== property-rate end===*/
+/* ========== card-header end======== */
+
+/* ========== card-title ========= */
+.card-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #151b26;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+/* ========== card-title end ========= */
+
+/* ========== card-detil ========= */
+/* property-detail */
+.property-detail {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: #7d858f;
+  font-weight: 400;
+}
+
+.property-detail div:first-child {
+  margin-bottom: 8px;
+}
+
+.property-detail dd span::after {
+  content: "😒";
+  margin: 0 8px;
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0;
+}
+/* ========== card-detil end ========= */
+
+/* =====================   card content  end  ================ */
+
+/* ==========================    card  end ================================= */

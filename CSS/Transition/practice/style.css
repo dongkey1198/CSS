@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
+
+.line-button {
+  position: relative;
+  /* text */
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.25;
+  font-weight: 700;
+  color: black;
+
+  /* button */
+  padding: 18px 30px;
+
+  cursor: pointer;
+}
+
+.line-button::after {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: skyblue;
+  content: "";
+  left: 0;
+  bottom: 0;
+
+  transition: width 150ms ease-in, backgroud-color 250ms ease-in;
+}
+
+.line-button:hover::after {
+  width: 100%;
+  background-color: rgb(25, 108, 218);
+}

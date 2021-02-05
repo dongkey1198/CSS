@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  font-size: 30px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.box::after {
+  content: "Mobile";
+}
+
+@media screen and (min-width: 576px) {
+  .box {
+    background-color: tomato;
+  }
+  .box::after {
+    content: "LandScape";
+  }
+}

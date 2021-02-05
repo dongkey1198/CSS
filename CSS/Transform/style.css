@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  transform: rotate(45deg);
+}
+
+p {
+  background-color: grey;
+}
